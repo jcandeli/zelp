@@ -1,4 +1,5 @@
-# Zelp
+<img src="https://raw.githubusercontent.com/jcandeli/zelp/master/dist/logo.png" alt="Zelp Chrome Extension" width="300" />
+
 ### How to install Zelp Chrome Extension
 
 1. Download the [zelp.zip](https://github.com/jcandeli/zelp/raw/master/dist/zelp.zip) file
