@@ -1,8 +1,8 @@
 # Zelp
 ### How to install Zelp Chrome Extension
 
-1. Download the zip file
-1. double click the `zelp.zip`
+1. Download the [zelp.zip](https://github.com/jcandeli/zelp/raw/master/dist/zelp.zip) file
+1. double click `zelp.zip` to unpack
 1. go to `chrome://extensions/` in Chrome browser
 1. Click the `Developer Mode` check box in top right of page
 1. Click `Load Unpacked Extension...` button
