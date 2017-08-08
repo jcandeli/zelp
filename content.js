@@ -9,30 +9,6 @@ class Zelp {
 
     }
 
-    createGUID() {
-        function s4() {
-          return Math.floor((1 + Math.random()) * 0x10000)
-            .toString(16)
-            .substring(1);
-        }
-        return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-          s4() + '-' + s4() + s4() + s4();
-    }
-
-    getUser() {
-        chrome.storage.local.get('user', (user) => {
-            if(user === undefined) {
-                user = {};
-                user.id = this.createGUID();
-                user.name = $('nav b').text().replace('Hi ', '').trim();
-                chrome.storage.local.set({ user });
-            } else {
-                this.user = user;
-            }
-        });
-
-    }
-
     getRestaurants() {
         this.restaurants = this.restaurantList.map((index, item) => {
             const restaurant = this.getRestaurantInfo($(item).clone());
