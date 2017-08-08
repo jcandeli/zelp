@@ -1,0 +1,66 @@
+.pencil {
+    height: 20px;
+    cursor: pointer;
+}
+
+.comment-form {
+    margin-top: 10px;
+}
+
+.form-buttons {
+    margin-top: 10px;
+    text-align: right;
+    width: 108%;
+    padding-right: 0;
+}
+
+#menu a.cancel-link {
+    display: inline;
+    padding: 0;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.comments {
+    width: 100%;
+}
+
+.comment {
+    position: relative;
+    margin: 0 0 20px 20px !important;
+    font-style: italic;
+    border-left: solid red 2px;
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
+.delete-link {
+    position: absolute !important;
+    color: #9e9e9e;
+    left: -22px;
+    top: 0;
+    cursor: pointer;
+    display: inline !important;
+    padding: 0 10px 0 0 !important;
+}
+
+#r-list .pencil {
+    margin-left: 10px;
+}
+
+#r-list .comment-form {
+    max-width: 30%;
+    margin: 10px;
+}
+
+#r-list .cancel-link {
+    display: inline-block !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    margin-right: 10px;
+    color: #007aff !important;
+}
+
+#r-list .comment {
+    margin-left: 30px !important;
+}

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Zelp - Grubhub comments",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://officeorders.grubhub.com/zefr*"
+      ],
+      "js": ["zepto.min.js", "content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "web_accessible_resources": ["pencil.svg"],
+  "permissions": [
+      "storage"
+    ]
+}
