@@ -62,10 +62,13 @@ class Zelp {
 
 
     getRestaurantInfo($restaurant) {
-        const restIdMatches = $restaurant.attr('href').match(this.restaurantIdRegex);
-        const id = (restIdMatches) ? restIdMatches[1] : null;
         const name = $restaurant.find('h4').text().trim();
+        const id = this.formatRestaurantKey(name);
         return { id, name };
+    }
+
+    formatRestaurantKey(restaurantName) {
+        return restaurantName.replace(/\s+/g, '-').replace(/\'/g, '').toLowerCase();
     }
 
     toggleCommentBox(dish, $item) {
